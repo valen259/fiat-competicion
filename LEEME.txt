@@ -1,0 +1,27 @@
+FIAT COMPETICIÓN — SITIO WEB
+=============================
+
+ARCHIVOS
+- index.html: estructura y contenido de la página.
+- styles.css: diseño adaptable a celular y computadora.
+- script.js: menú móvil y botón para copiar texto de contacto.
+
+VER LA WEB EN TU COMPUTADORA
+1. Descomprimí el ZIP.
+2. Abrí la carpeta.
+3. Hacé doble clic en index.html. Se abre en el navegador.
+
+ANTES DE PUBLICAR
+- Cambiá los enlaces de Instagram y YouTube por los perfiles reales.
+- Reemplazá la imagen de portada (URL de Unsplash en styles.css) por una foto propia si querés.
+- Editá los textos de modelos/eventos para reflejar la comunidad real.
+- La web usa Google Fonts y una imagen externa; para que carguen hace falta internet.
+
+PUBLICAR GRATIS CON GITHUB PAGES (resumen)
+1. Creá una cuenta en https://github.com/
+2. Creá un repositorio público, por ejemplo fiat-competicion.
+3. Subí index.html, styles.css y script.js (y este LEEME si querés).
+4. En Settings > Pages, elegí publicar desde la rama main y la carpeta /(root).
+5. Guardá y esperá a que GitHub genere la dirección del sitio.
+
+La web es estática: no incluye base de datos, cuentas de usuario ni panel de administración.
