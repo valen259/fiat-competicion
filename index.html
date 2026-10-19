@@ -1,109 +1,125 @@
-<!doctype html>
+
+<!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="theme-color" content="#101010">
-  <meta name="description" content="Fiat Competición — pasión fierrera, pista y calle.">
-  <title>Fiat Competición | Pasión fierrera</title>
-  <link rel="stylesheet" href="styles.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#0b0b0d">
+<title>Mecánica Argentina | Roblox Fan Site</title>
+<style>
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:#0b0b0d;color:#fff;font-family:Arial,sans-serif}
+header{padding:20px 7%;background:#141416;border-bottom:2px solid #ed2939;display:flex;justify-content:space-between;align-items:center;gap:15px;position:sticky;top:0;z-index:5}
+.logo{font-weight:900;font-size:19px;letter-spacing:1px}
+.red,h1 span,h2 span{color:#ed2939}
+nav{display:flex;gap:22px}
+nav a{color:white;text-decoration:none;font-size:12px;font-weight:bold}
+nav a:hover{color:#ed2939}
+.hero{min-height:80vh;padding:90px 9%;display:flex;flex-direction:column;justify-content:center;position:relative;overflow:hidden;background:linear-gradient(90deg,#080809f5,#08080980),url('https://images.unsplash.com/photo-1503376780353-7e6692767b70?auto=format&fit=crop&w=1800&q=85') center/cover}
+.tag{color:#ed2939;font-size:11px;font-weight:bold;letter-spacing:4px}
+h1{font-size:clamp(48px,8vw,94px);line-height:.95;margin:22px 0;font-weight:900;animation:appear 1s ease}
+.hero p{max-width:540px;color:#ccc;line-height:1.8}
+.btn{display:inline-block;background:#ed2939;color:white;text-decoration:none;padding:16px 23px;font-weight:bold;font-size:12px;margin-top:18px;width:max-content;transition:.25s}
+.btn:hover{background:#fff;color:#111;transform:translateY(-4px)}
+section{padding:75px 9%}
+h2{font-size:clamp(32px,5vw,55px);line-height:1.05}
+.intro{max-width:850px;color:#bbb;line-height:1.8}
+.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:20px}
+.card{background:#171719;border:1px solid #303035;overflow:hidden;transition:.25s}
+.card:hover{transform:translateY(-7px);border-color:#ed2939}
+.card img{width:100%;height:180px;object-fit:cover;display:block}
+.card div{padding:22px}
+.card h3{margin-top:0}
+.card p{color:#aaa;line-height:1.7;font-size:14px}
+.band{background:#ed2939;padding:18px 10px;text-align:center;font-weight:900;letter-spacing:4px;overflow:hidden}
+.gallery{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:12px}
+.gallery img{width:100%;height:220px;object-fit:cover;filter:saturate(.7);transition:.3s}
+.gallery img:hover{filter:saturate(1);transform:scale(1.02)}
+.join{text-align:center;background:linear-gradient(#101012e8,#101012e8),url('https://images.unsplash.com/photo-1486262715619-67b85e0b08d3?auto=format&fit=crop&w=1600&q=80') center/cover}
+.join p{color:#bbb}
+footer{padding:30px 7%;background:#070708;color:#777;text-align:center;font-size:12px;border-top:1px solid #333}
+footer strong{color:#ed2939}
+@keyframes appear{from{opacity:0;transform:translateY(25px)}to{opacity:1;transform:translateY(0)}}
+@media(max-width:650px){
+ header{flex-wrap:wrap;padding:18px 5%}
+ nav{width:100%;justify-content:space-between;gap:8px}
+ nav a{font-size:10px}
+ .hero{padding:75px 7%;min-height:70vh}
+ section{padding:55px 7%}
+ .band{font-size:12px;letter-spacing:2px}
+}
+</style>
 </head>
 <body>
-  <div class="topline"></div>
-  <header class="site-header">
-    <a class="brand" href="#inicio" aria-label="Fiat Competición, inicio">
-      <span class="brand-mark">FC</span>
-      <span>FIAT <b>COMPETICIÓN</b><small>LA PASIÓN NO SE NEGOCIA</small></span>
-    </a>
-    <button class="menu-toggle" id="menuToggle" aria-label="Abrir menú" aria-expanded="false">☰</button>
-    <nav id="mainNav">
-      <a href="#nosotros">La pasión</a>
-      <a href="#maquinas">Máquinas</a>
-      <a href="#eventos">Eventos</a>
-      <a class="nav-cta" href="#contacto">Sumate ↗</a>
-    </nav>
-  </header>
+<header>
+  <div class="logo">MECÁNICA <span class="red">ARGENTINA</span></div>
+  <nav>
+    <a href="#inicio">INICIO</a>
+    <a href="#juego">EL JUEGO</a>
+    <a href="#garage">GARAGE</a>
+    <a href="#galeria">GALERÍA</a>
+  </nav>
+</header>
 
-  <main>
-    <section class="hero" id="inicio">
-      <div class="hero-shade"></div>
-      <div class="hero-content">
-        <p class="eyebrow"><span></span> ADN FIERRERO · ARGENTINA</p>
-        <h1>HECHOS PARA<br><em>HACER RUIDO.</em></h1>
-        <p class="hero-copy">Hierro, pasión y olor a nafta. Un lugar para los que sienten los fierros de verdad.</p>
-        <div class="hero-actions">
-          <a class="button button-red" href="#maquinas">VER LAS MÁQUINAS <span>↗</span></a>
-          <a class="text-link" href="#nosotros">CONOCÉ LA CULTURA ↓</a>
-        </div>
-      </div>
-      <div class="hero-stamp"><strong>100%</strong><span>FIERRERO</span></div>
-      <div class="hero-bottom"><span>BUILT ON PASSION</span><span>EST. IN ARGENTINA</span><span>01 / 04</span></div>
-    </section>
+<main>
+  <div class="hero" id="inicio">
+    <div class="tag">ROBLOX · CULTURA FIERRERA</div>
+    <h1>ACÁ LOS FIERROS<br>SE HACEN <span>LEYENDA.</span></h1>
+    <p>Una página de fans dedicada a Mecánica Argentina. Autos, motores, personalización y toda la pasión por los fierros en Roblox.</p>
+    <a class="btn" href="https://www.roblox.com/" target="_blank" rel="noopener">BUSCAR EL JUEGO ↗</a>
+  </div>
 
-    <section class="ticker" aria-label="Lema"><div>FIAT EN LA SANGRE <b>✳</b> PISTA Y CALLE <b>✳</b> PASIÓN SIN FILTRO <b>✳</b> FIAT EN LA SANGRE <b>✳</b> PISTA Y CALLE <b>✳</b></div></section>
+  <div class="band">MOTORES ✦ TUNING ✦ GARAGE ✦ CULTURA FIERRERA</div>
 
-    <section class="intro section" id="nosotros">
-      <div class="section-tag">01 / LA CULTURA</div>
-      <div class="intro-grid">
-        <h2>NO ES SOLO<br>UN AUTO.<br><em>ES UNA FORMA<br>DE VIVIR.</em></h2>
-        <div class="intro-copy">
-          <p class="lead">Hay cosas que no se explican. Se escuchan, se sienten y se viven.</p>
-          <p>Fiat Competición nace de esa pasión por los fierros: los proyectos hechos a pulmón, los amigos en el taller, las noches de armado y ese momento en que todo cobra sentido.</p>
-          <p>Este espacio es para compartir máquinas, encuentros y cultura fierrera argentina.</p>
-          <a class="arrow-link" href="#contacto">FORMÁ PARTE <span>↗</span></a>
-        </div>
-      </div>
-    </section>
+  <section id="juego">
+    <div class="tag">01 / BIENVENIDO AL TALLER</div>
+    <h2>NO ES SOLO UN AUTO.<br><span>ES TU PROYECTO.</span></h2>
+    <p class="intro">Mecánica Argentina reúne el mundo de los autos y la mecánica dentro de Roblox. Esta fan page es un lugar para compartir la pasión por los vehículos, descubrir ideas para proyectos y disfrutar la cultura fierrera.</p>
+  </section>
 
-    <section class="machines section" id="maquinas">
-      <div class="section-heading">
-        <div><div class="section-tag">02 / LAS PROTAGONISTAS</div><h2>HIERRO CON <em>HISTORIA.</em></h2></div>
-        <p>De los clásicos que marcaron una época a los proyectos que siguen escribiendo la suya.</p>
-      </div>
-      <div class="machine-grid">
-        <article class="machine-card card-128">
-          <div class="card-number">01 — CLÁSICO</div><div class="car-silhouette">128</div>
-          <div class="machine-info"><span>EL ÍCONO</span><h3>FIAT 128</h3><p>Ligero, noble y con alma de carrera.</p></div>
-        </article>
-        <article class="machine-card card-147">
-          <div class="card-number">02 — CALLE</div><div class="car-silhouette">147</div>
-          <div class="machine-info"><span>EL CALLEJERO</span><h3>FIAT 147</h3><p>Chico de tamaño. Gigante de actitud.</p></div>
-        </article>
-        <article class="machine-card card-uno">
-          <div class="card-number">03 — LEYENDA</div><div class="car-silhouette">UNO</div>
-          <div class="machine-info"><span>EL INDOMABLE</span><h3>FIAT UNO</h3><p>Una base para soñar en grande.</p></div>
-        </article>
-      </div>
-      <p class="fine-print">Los modelos y textos son una muestra inicial. Personalizá esta sección con fotos y proyectos reales de tu comunidad.</p>
-    </section>
+  <section id="garage">
+    <div class="tag">02 / TU GARAGE</div>
+    <h2>MANOS A LA <span>OBRA.</span></h2>
+    <div class="cards">
+      <article class="card">
+        <img src="https://images.unsplash.com/photo-1486262715619-67b85e0b08d3?auto=format&fit=crop&w=800&q=85" alt="Motor de automóvil">
+        <div><h3>MECÁNICA</h3><p>Todo empieza bajo el capot. Inspirate para tu próximo proyecto mecánico.</p></div>
+      </article>
+      <article class="card">
+        <img src="https://images.unsplash.com/photo-1492144534655-ae79c964c9d7?auto=format&fit=crop&w=800&q=85" alt="Auto deportivo">
+        <div><h3>TUNING</h3><p>Colores, llantas y detalles: cada auto puede tener su propia identidad.</p></div>
+      </article>
+      <article class="card">
+        <img src="https://images.unsplash.com/photo-1511919884226-fd3cad34687c?auto=format&fit=crop&w=800&q=85" alt="Auto en la calle">
+        <div><h3>A LA CALLE</h3><p>Compartí tu pasión por los fierros y disfrutá la experiencia con amigos.</p></div>
+      </article>
+    </div>
+  </section>
 
-    <section class="event-band" id="eventos">
-      <div class="event-inner">
-        <div class="section-tag">03 / NOS VEMOS EN LA PISTA</div>
-        <h2>LA PASIÓN SE<br><em>COMPARTE.</em></h2>
-        <p>Expos, encuentros, circuitos y comunidad. Los mejores momentos empiezan cuando se juntan los fierreros.</p>
-        <a class="button button-light" href="#contacto">QUIERO SUMARME <span>↗</span></a>
-      </div>
-      <div class="event-side">NO HAY REEMPLAZO PARA LA PASIÓN.</div>
-    </section>
+  <section id="galeria">
+    <div class="tag">03 / INSPIRACIÓN</div>
+    <h2>POSTALES DEL <span>GARAGE.</span></h2>
+    <p class="intro">Imágenes ilustrativas de autos y talleres; no son capturas oficiales del juego.</p>
+    <div class="gallery">
+      <img src="https://images.unsplash.com/photo-1503376780353-7e6692767b70?auto=format&fit=crop&w=900&q=85" alt="Auto deportivo">
+      <img src="https://images.unsplash.com/photo-1503736334956-4c8f8e92946d?auto=format&fit=crop&w=900&q=85" alt="Auto preparado">
+      <img src="https://images.unsplash.com/photo-1519641471654-76ce0107ad1b?auto=format&fit=crop&w=900&q=85" alt="Vehículo en la ciudad">
+    </div>
+  </section>
 
-    <section class="contact section" id="contacto">
-      <div class="section-tag">04 / CONECTEMOS</div>
-      <div class="contact-grid">
-        <div><h2>¿TENÉS<br><em>NAFTA EN LAS VENAS?</em></h2><p>Seguinos la corriente y ayudanos a hacer crecer esta comunidad.</p></div>
-        <div class="contact-panel">
-          <p class="panel-label">REDES Y CONTACTO</p>
-          <p>Los enlaces de abajo son ejemplos: reemplazalos por tus perfiles reales antes de publicar.</p>
-          <a class="social-link" href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer">INSTAGRAM <span>↗</span></a>
-          <a class="social-link" href="https://www.youtube.com/" target="_blank" rel="noopener noreferrer">YOUTUBE <span>↗</span></a>
-          <button class="copy-button" id="copyEmail">COPIAR TEXTO PARA CONTACTAR <span>＋</span></button>
-          <p class="copy-status" id="copyStatus" aria-live="polite"></p>
-        </div>
-      </div>
-    </section>
-  </main>
+  <section class="join">
+    <div class="tag">¿LISTO PARA ARRANCAR?</div>
+    <h2>PRENDÉ EL MOTOR.<br><span>ARRANCA TU HISTORIA.</span></h2>
+    <p>Entrá a Roblox y buscá Mecánica Argentina para encontrar la experiencia correcta.</p>
+    <a class="btn" href="https://www.roblox.com/" target="_blank" rel="noopener">IR A ROBLOX ↗</a>
+  </section>
+</main>
 
-  <footer><a class="brand footer-brand" href="#inicio"><span class="brand-mark">FC</span><span>FIAT <b>COMPETICIÓN</b><small>LA PASIÓN NO SE NEGOCIA</small></span></a><span>HECHO CON PASIÓN FIERRERA 🇦🇷</span><a href="#inicio">VOLVER ARRIBA ↑</a></footer>
-  <script src="script.js"></script>
+<footer>
+  <p><strong>MECÁNICA ARGENTINA</strong> · FAN SITE NO OFICIAL</p>
+  <p>Proyecto de fans. No afiliado a Roblox ni a los creadores del juego.</p>
+  <a href="#inicio" style="color:white">VOLVER ARRIBA ↑</a>
+</footer>
 </body>
 </html>
